@@ -11,8 +11,8 @@ with these correspondances:
 
 This simulation is truthful to what happens on the Qworum platform, where:
 
-- there is no concept of a static method or a static property.
 - each endpoint call or property access happens within the context of a [Qworum object](https://qworum.net/en/specification/v1/#object).
+- there is no concept of a static method or a static property (but any object method can behave as if it were static by not using any object property).
 
 ## How the code base is organized
 
