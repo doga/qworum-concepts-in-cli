@@ -2,18 +2,17 @@
 
 To show that [Qworum](https://qworum.net) is an object-oriented system in the classical OOP sense, 
 this project implements a CLI-based simulation of 3 Qworum services 
-(aka Qworum APIs, aka [Qworum classes](https://qworum.net/en/specification/v1/#class)) where:
+(aka Qworum APIs, aka [Qworum classes](https://qworum.net/en/specification/v1/#class)),
+with these correspondances:
 
-- each Qworum class is implemented by a TypeScript class.
-- the Qworum class methods are implemented by TypeScript class methods.
-- the Qworum class properties are implemented by TypeScript class properties.
+- Qworum class → TypeScript class.
+- Qworum class method → TypeScript class method.
+- Qworum class property → TypeScript class property.
 
 This simulation is truthful to what happens on the Qworum platform, where:
 
-- there is no concept of a static class, or a static method, or a static property.
+- there is no concept of a static method or a static property.
 - each endpoint call or property access happens within the context of a [Qworum object](https://qworum.net/en/specification/v1/#object).
-
-In that sense, this simulation is a faithful representation of what happens on the Qworum platform.
 
 ## How the code base is organized
 
